@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-list-api", "todo-list-api\todo-list-api.csproj", "{D7E1E7C6-D90B-4B62-8EB1-EFDA9E09A675}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "todo-list-db", "todo-list-db\todo-list-db.sqlproj", "{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7E1E7C6-D90B-4B62-8EB1-EFDA9E09A675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E1E7C6-D90B-4B62-8EB1-EFDA9E09A675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E1E7C6-D90B-4B62-8EB1-EFDA9E09A675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E1E7C6-D90B-4B62-8EB1-EFDA9E09A675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECC90B3-5BEA-4DF0-AEBB-72CCFE1AD219}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23363E4A-8EE0-46D7-BB35-5B19B6D40A2E}
+	EndGlobalSection
+EndGlobal

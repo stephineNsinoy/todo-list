@@ -1,0 +1,7 @@
+@use "../../styles" as *;
+
+.Checkbox {
+  &___disabled {
+    opacity: 0.5;
+  }
+}

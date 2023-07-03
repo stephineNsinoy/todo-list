@@ -1,0 +1,96 @@
+@use "../styles/" as *;
+
+.TodoList {
+  background-color: $neutral-900;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+
+  &_form {
+    @include flex-center;
+    gap: 16px;
+    padding: 1rem 0;
+    position: relative;
+
+    &_input {
+      min-width: 420px;
+    }
+
+    &_error {
+      position: absolute;
+      bottom: -5px;
+      left: 16px;
+    }
+  }
+
+  &_list {
+    max-height: 400px;
+    overflow-y: auto;
+
+    &_item {
+      background-color: $neutral-100;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 1rem 0.7rem;
+      margin: 1rem 0;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .TodoList_list_item_button {
+          right: 0;
+        }
+      }
+
+      &_checked {
+        text-decoration: line-through;
+        color: $neutral-400;
+      }
+
+      &_button {
+        background-color: $red-400;
+        border-radius: 0 1rem 1rem 0;
+        display: flex;
+        padding: 2rem 0.5rem;
+        position: absolute;
+        right: -80px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &_edit {
+      > input {
+        padding: 4px 0.5rem;
+        min-width: 350px;
+      }
+    }
+  }
+
+  &_progress {
+    &_bar {
+      width: fit-content;
+      background-color: $neutral-400;
+      border-radius: 100px;
+      padding: 0.5rem 1rem;
+      position: relative;
+      z-index: 2;
+
+      &_fill {
+        height: 100%;
+        background-color: $yellow-400;
+        border-radius: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  &_footer {
+    @include flex-between;
+    margin-top: 16px;
+  }
+}

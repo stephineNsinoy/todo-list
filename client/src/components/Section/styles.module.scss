@@ -1,0 +1,22 @@
+@use "../../styles" as *;
+
+.Section {
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    padding: 80px 0 40px;
+  }
+
+  &_title {
+    @include flex-center;
+    margin-bottom: 32px;
+
+    &_text {
+      @include breakpoint(xs) {
+        font-size: 32px;
+      }
+    }
+  }
+}
